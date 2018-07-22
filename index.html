@@ -51,7 +51,7 @@
 
     <!-- Header
    ================================================== -->
-    <header class="mobile">
+    <header class="mobile" style="background-color: white;">
 
         <div class="row">
 
@@ -59,7 +59,7 @@
 
                 <div class="logo">
                     <a href="#">
-                        <img alt="" src="images/TrifinityLogo3.png" style="margin-top:-11px;">
+                        <img alt="" src="images/trifinitylogo4.png" style="margin-top:-11px; height:40px; width: 130px;">
                     </a>
                 </div>
 
@@ -528,7 +528,6 @@
         L.marker([16.861111, 96.181275]).addTo(map)
             .bindPopup('Trifinity')
             .openPopup();
-
     </script>
 
     <!-- Contact Section
@@ -549,13 +548,13 @@
 
                 <p>
                     No. 40 A, 2nd Floor,
-                    <br /> Myinthar Toe Chae 3rd Street, 
-		    <br/>South Okkalapa Township,
+                    <br /> Myinthar Toe Chae 3rd Street,
+                    <br/>South Okkalapa Township,
                     <br /> Yangon, Myanmar.
                 </p>
 
                 <p>
-                    Phone: 09 79 7377 882, 09 42854 3616
+                    Phone: 09 79 7377 882, 09 761 779 779
                     <br /> Email: info@trifinitymyanmar.com
                 </p>
 
@@ -606,7 +605,6 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script>
         window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')
-
     </script>
     <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
 
@@ -625,14 +623,16 @@
                 $('#intro').css('height', $(window).height() + 'px');
             });
         });
-
     </script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113477088-2"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
 
         gtag('config', 'UA-113477088-2');
@@ -655,8 +655,11 @@
         };
         (function (d, s, id) {
             var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) { return; }
-            js = d.createElement(s); js.id = id;
+            if (d.getElementById(id)) {
+                return;
+            }
+            js = d.createElement(s);
+            js.id = id;
             js.src = "https://connect.facebook.net/en_US/sdk.js";
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
